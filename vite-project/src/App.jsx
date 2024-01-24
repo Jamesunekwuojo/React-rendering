@@ -12,10 +12,10 @@ function App() {
   if (day.toLocaleLowerCase()==="monday"){
     dayGreetings = `Happy${day}`
   } else if(day.toLocaleLowerCase()==="tuesday"){
-    dayGreetings = `Happy${day}`
+    dayGreetings = `Happy${day}, `
 
   } else if(day.toLocaleLowerCase()==="wednesday"){
-    dayGreetings = `Happy${day}`
+    dayGreetings = `Happy${day}, 3 days left to weekends `
 
   } else if(day.toLocaleLowerCase()==="thursday"){
     dayGreetings = `Happy${day}`
@@ -35,7 +35,7 @@ function App() {
         {dayGreetings}
       </h1>
 
-      {morning? <h2>Have u had ur breakfast</h2>:''}
+      {morning? <h2>Have u had ur breakfast?</h2>:''}
 
     </div>
     </>
